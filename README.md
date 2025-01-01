@@ -1,1 +1,2 @@
-# Quraan-in-Creole-Full-Translation
+# Quraan in Creole Project
+This project provides a full Quraan translation in Mauritian Creole.
