@@ -1,66 +1,82 @@
-/* Navbar styles */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2e8b57;
-    padding: 1em;
-  }
-  
-  .logo {
-    height: 50px;
-  }
-  
-  ul {
-    list-style: none;
-    display: flex;
-    gap: 1em;
-    margin: 0;
-  }
-  
-  ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5em;
-  }
-  
-  ul li a:hover {
-    background-color: #3cb371;
-    border-radius: 5px;
-  }
-  
+/* Navbar Styles */
+#navbar {
+  background-color: #2e8b57;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffd700;
+}
+
+/* Burger Icon */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
   .burger {
-    display: none;
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #2e8b57;
+    width: 100%;
     flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
+    align-items: center;
+    display: none;
+    padding: 1em 0;
   }
-  
-  .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    border-radius: 2px;
+
+  .nav-links.active {
+    display: flex;
   }
-  
-  @media screen and (max-width: 768px) {
-    ul {
-      display: none;
-      flex-direction: column;
-      background-color: #2e8b57;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      width: 100%;
-      text-align: center;
-    }
-  
-    ul.active {
-      display: flex;
-    }
-  
-    .burger {
-      display: flex;
-    }
+
+  .nav-links li {
+    margin: 0.5em 0;
   }
-  
+}
