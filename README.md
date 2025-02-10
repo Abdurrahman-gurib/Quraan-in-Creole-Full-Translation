@@ -16,6 +16,7 @@ This project provides a full Quraan translation in Mauritian Creole.
 ## Siparah 4
 - **Start:** Surah Aal-E-Imran (3:93) – "All food was lawful to the Children of Israel except what Israel had made unlawful for himself..."
 - **End:** Surah An-Nisa (4:23) – "Prohibited to you [for marriage] are your mothers, your daughters, your sisters..."
+- **Info:** This Siparah contains portions of Surah Aal-E-Imran (from 3:93 to 3:200) and starts Surah An-Nisa (from 4:1) until Ayah 4:23.
 
 ## Siparah 5
 - **Start:** Surah An-Nisa (4:24) – "And [also prohibited to you are all] married women except those your right hands possess..."
